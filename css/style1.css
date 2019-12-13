@@ -1,0 +1,386 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{box-sizing: border-box;}
+
+body{
+    width: 500px;
+    margin:0 auto; 
+    padding:0;
+    font-family: Calibre;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "Rogliano-regular";
+    src: url("H:/Kerjaan/Kerjaan Wajib - Magang di Aegislabs/6/font/Rogliano Family/TipoType - Rogliano-Regular.otf");
+}
+
+@font-face {
+    font-family: "Rogliano-thin";
+    src: url("H:/Kerjaan/Kerjaan Wajib - Magang di Aegislabs/6/font/Rogliano Family/TipoType - Rogliano-UltraLight.otf");
+}
+
+/* Pre Header */
+
+.preheader {
+    width:100%;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.preheader span{
+    font-size: 16px;
+    font-family: Calibre,Helvetica,sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* Navigasi */
+
+.navbar{
+    width:100%;
+    background-color: white;
+    padding: 8px 10px;
+    box-shadow: 3px 3px 3px grey;
+    z-index: 10000;
+    position: sticky;
+    top: 0;
+}
+
+/* #bar{
+    width:20px;
+} */
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index:10001;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+.openbtn {
+    background: white;
+    border: none;
+    width: 27px;
+}
+
+.openbtn i{
+    width:100%;
+}
+
+#logo {
+    position: relative;
+    left: 35%;
+}
+
+#cart {
+    position: relative;
+    top: 1%;
+    left: 70%;
+}
+
+/* Konten 1 */
+
+.pidio {
+    margin: 0 auto;
+    width: 100%;
+    height: 415px;
+}
+
+.pidio video {
+    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.judul {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+.judul h2 {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 32px;
+}
+
+/* Autopilot Cook */
+
+.autopilotCook h4 {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 20px 0px 20px;
+}
+
+.autopilotCook p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 20px 10px 20px;
+    letter-spacing: 0.5px;
+}
+
+.perfection { 
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 0;
+    padding:0;
+}
+
+/* Konten 8 */
+
+.konten8 {
+    text-align: center;
+    padding: 40px 30px 30px 30px;
+    background: #f4f4f4;
+}
+
+.konten8 h3{
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.konten8 h4{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.konten8 p{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    color: gray;
+    letter-spacing: 0.3px;
+}
+
+
+
+.divs {
+    padding: 30px 30px 0 30px;
+}
+
+.divs h3 {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.kontenSepuluh {
+    padding: 150px 60px;
+    text-align: center;
+    font-family: "Rogliano-thin";
+    font-size: 27px;
+    border-bottom: 1px solid gray;
+}
+
+/* Subscribe */
+
+.subscribe {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.pe {
+    padding : 30px 40px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.form > input {
+    background-color: #f4f4f4;
+    border: 1px solid #bdbcbc;
+    padding: 14px;
+    width: 65%;
+}
+
+.form > button {
+    background-color: white;
+    padding: 0 10px;
+    border: 2px solid #a09e9e;
+    width: 30%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Kaki */
+
+footer {
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    background: #f4f4f4;
+}
+
+.accordion {
+    color: black;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: #f4f4f4;
+}
+
+.active, .accordion:hover {
+    background-color: white;
+}
+
+.panel {
+    padding: 0 13px;
+    display: none;
+    overflow: hidden;
+}
+
+.panel a{
+    display: block;
+    padding: 14px 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+/* .menu{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid gray;
+}
+
+#myLinks {
+    display:none;
+} */
+
+/* .menu a {
+    padding: 14px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.menu a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+
+.ikon {
+    display: flex;
+    padding: 60px 20px;
+    justify-content: space-evenly;
+}
+
+.ikon h4 {
+    font-size: 14px;
+    color: gray;
+    line-height: 20px;
+}
+
+.ikon i{
+    color: gray;
+}
+
+.ikon i:hover {
+    color:black;
+}
